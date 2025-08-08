@@ -42,14 +42,7 @@ Isolate windows where funding and return are highly correlated.
 
 Python (Pandas, NumPy, Matplotlib, Seaborn, Statsmodels)
 Jupyter Notebook
-Data Format: CSV & Pickle (PKL)
-
-├── data/
-│   ├── funding_rate_binance_btc.pkl     # Cleaned funding rate for BTC on Binance
-│   ├── btc_returns.csv                  # BTC hourly and daily return data
-├── funding-vs-btc-returns.ipynb         # Main analysis notebook
-├── README.md                            # Project documentation
-
+Data Format: CSV & Pickle (PKL)     
 
 # Key Insight
 Funding rate can be a valuable sentiment indicator, especially when extreme, but by itself it is not a reliable standalone predictor of price direction. Incorporating it into multi-factor models or as part of event-based signals can improve interpretability and short-term strategy design.
