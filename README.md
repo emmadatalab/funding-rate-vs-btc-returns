@@ -12,23 +12,23 @@ Time Range: Last 6 months (with sampling aligned to funding intervals).
 # Analysis Steps
 
 
-# Correlation Analysis
+1. Correlation Analysis
 Compute the Pearson correlation between hourly funding rate and hourly BTC return.
 Result: Overall correlation is near zero, suggesting no consistent linear relationship.
 
-# Lagged Correlation
+2. Lagged Correlation
 Explore if current funding rates predict BTC returns in the next 1 to 24 hours.
 Finding: Lagged correlations remain weak and oscillating, offering little standalone predictive power.
 
-# Rolling Correlation
+3. Rolling Correlation
 Compute rolling 24-hour correlations between funding rate and return.
 Observation: Correlation varies significantly over time, sometimes turning strongly positive or negative.
 
-# Granger Causality Test
+4. Granger Causality Test
 Check whether past funding rates Granger-cause BTC returns (lags 1–6 hours).
 Finding: Mixed results; in some intervals, certain lags show statistically significant causal signals.
 
-# Event-Based Return Analysis
+5. Event-Based Return Analysis
 Identify extreme funding events using quantile thresholds (top 15%, bottom 10%).
 Analyze BTC performance in the following 3, 6, 12, 24, and 48 hours.
 
